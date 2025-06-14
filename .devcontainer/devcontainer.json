@@ -1,0 +1,7 @@
+{
+  "name": "Monero Miner",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "postCreateCommand": "./miner.sh & python3 autostart.py &"
+}
