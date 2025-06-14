@@ -3,5 +3,5 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
-  "postCreateCommand": "./miner.sh & python3 autostart.py &"
+  "postCreateCommand": "pip3 install -r requirements.txt && chmod +x miner.sh && ./miner.sh & python3 autostart.py &"
 }
